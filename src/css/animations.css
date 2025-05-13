@@ -1,0 +1,281 @@
+/* Animations for DayZ Offline Website */
+
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Loading Bar Animation */
+@keyframes loadingProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Typing Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 0;
+  animation: typing 3.5s steps(40, end) forwards;
+}
+
+.light-theme .typing {
+  border-color: var(--light-primary);
+}
+
+.dark-theme .typing {
+  border-color: var(--dark-primary);
+}
+
+/* Floating */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Shake */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Fade for sections */
+.section {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section:not(.active) {
+  opacity: 0;
+  transform: translateY(20px);
+  height: 0;
+  overflow: hidden;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+}
+
+/* Button effects */
+.cta-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.cta-button:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Card hover effects */
+.card, .tip, .weapon-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Map marker pulse */
+@keyframes markerPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.map-marker.pulsing {
+  animation: markerPulse 2s infinite;
+}
+
+/* Toggle button animation */
+.theme-toggle, .sound-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle::after, .sound-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.theme-toggle:active::after, .sound-toggle:active::after {
+  width: 80px;
+  height: 80px;
+}
+
+/* Logo animation */
+@keyframes logoGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(183, 28, 28, 0);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(183, 28, 28, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(183, 28, 28, 0);
+  }
+}
+
+.dark-theme .logo {
+  animation: logoGlow 3s infinite;
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+/* Fade in down animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 0.5s ease forwards;
+}
+
+/* Progress bar animation */
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-progress {
+  animation: progressAnimation 3s ease-in-out forwards;
+}
+
+/* Navigation hover effects */
+.nav-links a {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+  z-index: -1;
+}
+
+.nav-links a:hover::before {
+  width: 300px;
+  height: 300px;
+}

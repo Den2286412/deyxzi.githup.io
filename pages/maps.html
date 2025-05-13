@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карты DayZ - Подробные гайды по локациям</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/maps.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header id="main-header">
+      <div class="logo">
+        <h1>DayZ</h1>
+      </div>
+      <nav>
+        <div class="nav-icon" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="gameplay.html">Геймплей</a></li>
+          <li><a href="weapons.html">Оружие</a></li>
+          <li><a href="maps.html" class="active">Карты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Выживание</a>
+            <ul class="dropdown-menu">
+              <li><a href="survival-basics.html">Основы</a></li>
+              <li><a href="food-water.html">Еда и вода</a></li>
+              <li><a href="medical.html">Медицина</a></li>
+              <li><a href="base-building.html">Строительство баз</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Руководства</a>
+            <ul class="dropdown-menu">
+              <li><a href="beginners-guide.html">Для новичков</a></li>
+              <li><a href="crafting.html">Крафтинг</a></li>
+              <li><a href="pvp-tips.html">Советы по PvP</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="about.html">О сайте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" id="maps-banner">
+      <div class="banner-content">
+        <h1>Карты DayZ</h1>
+        <p>Подробные гайды по официальным картам</p>
+      </div>
+    </section>
+
+    <!-- Maps Introduction -->
+    <section class="maps-intro">
+      <div class="container">
+        <h2 class="section-title">Мир DayZ</h2>
+        <p class="section-intro">Мир DayZ включает несколько обширных карт, каждая со своими уникальными особенностями, проблемами и возможностями. Знание местности — один из ключевых факторов для долгосрочного выживания.</p>
+        
+        <div class="maps-navigation">
+          <button class="map-nav-btn active" data-map="chernarus">Черноруссия</button>
+          <button class="map-nav-btn" data-map="livonia">Ливония</button>
+          <button class="map-nav-btn" data-map="namalsk">Намальск</button>
+          <button class="map-nav-btn" data-map="esseker">Эссекер</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Maps -->
+    <section class="interactive-maps">
+      <div class="container">
+        <div class="map-container active" id="chernarus-map">
+          <div class="map-header">
+            <h2>Черноруссия (Chernarus)</h2>
+            <p>Классическая карта DayZ размером 225 км², основанная на постсоветском государстве.</p>
+          </div>
+          
+          <div class="map-interactive">
+            <div class="map-image" id="chernarus-image">
+              <div class="map-marker" style="top: 25%; left: 70%;" data-location="cherno">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Черногорск</span>
+              </div>
+              <div class="map-marker" style="top: 15%; left: 82%;" data-location="elektro">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Электрозаводск</span>
+              </div>
+              <div class="map-marker" style="top: 35%; left: 35%;" data-location="nwaf">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Северо-западный аэродром</span>
+              </div>
+              <div class="map-marker" style="top: 60%; left: 60%;" data-location="berezino">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Березино</span>
+              </div>
+              <div class="map-marker" style="top: 30%; left: 55%;" data-location="stary">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Старое Собор</span>
+              </div>
+            </div>
+            
+            <div class="map-info">
+              <div class="location-details" id="cherno-details">
+                <h3>Черногорск (Chernogorsk)</h3>
+                <p>Крупный прибрежный город с высокой концентрацией зомби и ресурсов. Популярное место для PvP сражений.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Высокая</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Высокие</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Очень высокая</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Больница</li>
+                    <li>Полицейский участок</li>
+                    <li>Пожарная станция</li>
+                    <li>Промышленная зона</li>
+                    <li>Порт</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="elektro-details">
+                <h3>Электрозаводск (Elektrozavodsk)</h3>
+                <p>Второй по величине прибрежный город, с большим количеством промышленных объектов и военных укреплений.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Высокая</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Высокие</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Высокая</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Электростанция</li>
+                    <li>Больница</li>
+                    <li>Пожарная станция</li>
+                    <li>Склады</li>
+                    <li>Морской порт</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="nwaf-details">
+                <h3>Северо-западный аэродром (NWAF)</h3>
+                <p>Крупная военная зона с высококачественным лутом и крайне опасными PvP столкновениями.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Крайне высокая</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Военные (высокие)</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Максимальная</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Ангары</li>
+                    <li>Диспетчерская вышка</li>
+                    <li>Военные бараки</li>
+                    <li>Взлетная полоса</li>
+                    <li>Подземные бункеры</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="berezino-details">
+                <h3>Березино</h3>
+                <p>Крупный прибрежный город на восточной стороне карты, отличное место для начального лута.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Средние</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Больница</li>
+                    <li>Полицейский участок</li>
+                    <li>Промышленная зона</li>
+                    <li>Жилые дома</li>
+                    <li>Магазины</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="stary-details">
+                <h3>Старое Собор (Stary Sobor)</h3>
+                <p>Небольшой город в центре карты, стратегически важный из-за близости к военным базам.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Средние</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Высокая</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Церковь</li>
+                    <li>Магазины</li>
+                    <li>Водонапорная башня</li>
+                    <li>Военные палатки</li>
+                    <li>Жилые дома</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="map-features">
+            <h3>Особенности Черноруссии</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <div class="feature-icon" id="terrain-icon"></div>
+                <h4>Разнообразный ландшафт</h4>
+                <p>От прибрежных городов до горных районов, от густых лесов до открытых полей.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="military-icon"></div>
+                <h4>Военные объекты</h4>
+                <p>Многочисленные военные базы и аэродромы с высококачественным лутом.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="coastal-icon"></div>
+                <h4>Прибрежные города</h4>
+                <p>Береговая линия с крупными населенными пунктами — отличное место для старта.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="forest-icon"></div>
+                <h4>Густые леса</h4>
+                <p>Идеальные места для скрытного передвижения и устройства баз.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="survival-tips">
+            <h3>Советы по выживанию в Черноруссии</h3>
+            <ul>
+              <li>Начинайте игру с поиска воды — источники пресной воды можно найти в колодцах в большинстве населенных пунктов</li>
+              <li>Избегайте основных дорог — они часто патрулируются другими игроками</li>
+              <li>Ищите фруктовые сады возле деревень для базового питания</li>
+              <li>Двигайтесь вглубь материка постепенно, собирая ресурсы по пути</li>
+              <li>Запоминайте ориентиры — высокие объекты, горы, уникальные здания помогут ориентироваться без карты</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="map-container" id="livonia-map">
+          <div class="map-header">
+            <h2>Ливония (Livonia)</h2>
+            <p>Более дикая и менее населенная карта площадью 163 км², расположенная в восточноевропейском регионе.</p>
+          </div>
+          
+          <div class="map-interactive">
+            <div class="map-image" id="livonia-image">
+              <div class="map-marker" style="top: 75%; left: 45%;" data-location="brena">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Брена</span>
+              </div>
+              <div class="map-marker" style="top: 55%; left: 60%;" data-location="gieraltow">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Гералтув</span>
+              </div>
+              <div class="map-marker" style="top: 25%; left: 55%;" data-location="gliniska">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Глиниско</span>
+              </div>
+              <div class="map-marker" style="top: 35%; left: 75%;" data-location="airfield">
+                <span class="marker-dot"></span>
+                <span class="marker-label">Аэродром</span>
+              </div>
+            </div>
+            
+            <div class="map-info">
+              <div class="location-details" id="brena-details">
+                <h3>Брена (Brena)</h3>
+                <p>Южный город, часто служащий отправной точкой для игроков. Хорошее место для начального лута.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Средние</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Полицейский участок</li>
+                    <li>Магазины</li>
+                    <li>Жилые дома</li>
+                    <li>Склады</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="gieraltow-details">
+                <h3>Гералтув (Gieraltow)</h3>
+                <p>Центральный город с средним уровнем лута и удобным расположением для дальнейшего продвижения на север.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Средние</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Средняя</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Пожарная станция</li>
+                    <li>Больница</li>
+                    <li>Магазины</li>
+                    <li>Жилые районы</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="gliniska-details">
+                <h3>Глиниско (Gliniska)</h3>
+                <p>Северный военный аванпост с высоким уровнем военного лута и повышенной опасностью.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Высокая</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Военные (высокие)</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Высокая</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Военные бараки</li>
+                    <li>Оружейные склады</li>
+                    <li>Подземные бункеры</li>
+                    <li>Наблюдательные вышки</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="location-details" id="airfield-details">
+                <h3>Аэродром</h3>
+                <p>Военный аэродром с высококлассным оружием и снаряжением. Одно из самых опасных мест на карте.</p>
+                <div class="location-stats">
+                  <div class="stat">
+                    <span class="stat-label">Угроза:</span>
+                    <span class="stat-value">Крайне высокая</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Ресурсы:</span>
+                    <span class="stat-value">Военные (крайне высокие)</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">PvP активность:</span>
+                    <span class="stat-value">Максимальная</span>
+                  </div>
+                </div>
+                <div class="location-poi">
+                  <h4>Ключевые места:</h4>
+                  <ul>
+                    <li>Диспетчерская вышка</li>
+                    <li>Военные ангары</li>
+                    <li>Бункеры</li>
+                    <li>Взлетная полоса</li>
+                    <li>Подземные комплексы</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="map-features">
+            <h3>Особенности Ливонии</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <div class="feature-icon" id="wildlife-icon"></div>
+                <h4>Богатая дикая природа</h4>
+                <p>Больше возможностей для охоты и добычи пропитания в дикой местности.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="river-icon"></div>
+                <h4>Речные системы</h4>
+                <p>Разветвленная сеть рек, обеспечивающая доступ к пресной воде и природным ориентирам.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="bunker-icon"></div>
+                <h4>Подземные комплексы</h4>
+                <p>Уникальные подземные локации с редким лутом и сложной навигацией.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="weather-icon"></div>
+                <h4>Суровый климат</h4>
+                <p>Более частые дожди и грозы, требующие особого внимания к теплой одежде.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="survival-tips">
+            <h3>Советы по выживанию в Ливонии</h3>
+            <ul>
+              <li>Используйте реки для ориентирования и постоянного доступа к воде</li>
+              <li>Не пренебрегайте охотой — в Ливонии больше диких животных, чем в Черноруссии</li>
+              <li>Остерегайтесь хищников — волки представляют реальную угрозу</li>
+              <li>Планируйте маршрут с учетом более редких населенных пунктов</li>
+              <li>Будьте готовы к частым дождям — всегда имейте при себе средства для разведения огня</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="map-container" id="namalsk-map">
+          <div class="map-header">
+            <h2>Намальск (Namalsk)</h2>
+            <p>Суровая северная карта с экстремальными погодными условиями и уникальными аномалиями.</p>
+          </div>
+          
+          <div class="map-features">
+            <h3>Особенности Намальска</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <div class="feature-icon" id="cold-icon"></div>
+                <h4>Экстремальный холод</h4>
+                <p>Требует постоянного внимания к температуре тела и специального зимнего снаряжения.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="anomaly-icon"></div>
+                <h4>Аномальные зоны</h4>
+                <p>Уникальные локации с особыми опасностями и ценным лутом.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="lab-icon"></div>
+                <h4>Исследовательские объекты</h4>
+                <p>Секретные лаборатории с экспериментальным снаряжением и особыми угрозами.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="snow-icon"></div>
+                <h4>Снежный ландшафт</h4>
+                <p>Ограниченная видимость во время метелей и следы на снегу, выдающие местоположение.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="survival-tips">
+            <h3>Советы по выживанию в Намальске</h3>
+            <ul>
+              <li>Приоритизируйте теплую одежду — гипотермия убивает быстрее, чем голод</li>
+              <li>Всегда имейте при себе материалы для костра</li>
+              <li>Избегайте аномальных зон без специального снаряжения</li>
+              <li>Ресурсы более ограничены — планируйте передвижение тщательнее</li>
+              <li>Оставайтесь в укрытии во время сильных метелей</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="map-container" id="esseker-map">
+          <div class="map-header">
+            <h2>Эссекер (Esseker)</h2>
+            <p>Карта, изображающая постапокалиптическую Хорватию с уникальным городским и сельским ландшафтом.</p>
+          </div>
+          
+          <div class="map-features">
+            <h3>Особенности Эссекера</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <div class="feature-icon" id="urban-icon"></div>
+                <h4>Плотная городская застройка</h4>
+                <p>Больший акцент на городских боях и навигации в сложных застроенных зонах.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="underground-icon"></div>
+                <h4>Подземные системы</h4>
+                <p>Разветвленные туннели под городами, представляющие как опасность, так и возможности.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="dam-icon"></div>
+                <h4>Плотина и ГЭС</h4>
+                <p>Уникальные локации с высоким уровнем лута и стратегическим значением.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" id="hills-icon"></div>
+                <h4>Холмистая местность</h4>
+                <p>Перепады высот, обеспечивающие тактические преимущества для наблюдения и снайперской стрельбы.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="survival-tips">
+            <h3>Советы по выживанию в Эссекере</h3>
+            <ul>
+              <li>Используйте подземные туннели для скрытного передвижения по городам</li>
+              <li>Осваивайте городской паркур для эффективного перемещения между зданиями</li>
+              <li>Избегайте открытых перекрестков и площадей — идеальные места для засад</li>
+              <li>Используйте холмы и высоты для разведки перед передвижением</li>
+              <li>Будьте особенно осторожны на плотине и возле ГЭС — популярные места для PvP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loot Routes -->
+    <section class="loot-routes">
+      <div class="container">
+        <h2 class="section-title">Оптимальные маршруты для лута</h2>
+        <p class="section-intro">Эффективный сбор ресурсов требует продуманного маршрута с учетом ваших потребностей, рисков и имеющегося снаряжения.</p>
+        
+        <div class="routes-tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="beginner">Для новичков</button>
+            <button class="tab-btn" data-tab="military">Военный лут</button>
+            <button class="tab-btn" data-tab="medical">Медицинские припасы</button>
+            <button class="tab-btn" data-tab="survival">Выживание</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-content active" id="beginner">
+              <h3>Маршрут для новичков (Черноруссия)</h3>
+              <div class="route-info">
+                <p>Этот маршрут позволяет собрать базовое снаряжение с минимальным риском:</p>
+                <ol>
+                  <li><strong>Берег</strong> — начните с поиска еды в прибрежных городах (Каменка, Комарово)</li>
+                  <li><strong>Внутренние деревни</strong> — переместитесь в Балоту и Кошельки для базового снаряжения</li>
+                  <li><strong>Зеленогорск</strong> — средний город с хорошим балансом снаряжения и рисков</li>
+                  <li><strong>Мышкино</strong> — военные палатки для первого военного снаряжения</li>
+                  <li><strong>Внутренние деревни</strong> — постепенное продвижение вглубь для лучшего снаряжения</li>
+                </ol>
+                <p>Этот маршрут обеспечивает постепенное улучшение снаряжения при умеренном риске встречи с другими игроками. Избегайте основных городов и держитесь подальше от крупных военных объектов.</p>
+              </div>
+              <div class="route-image" id="beginner-route-image"></div>
+            </div>
+            
+            <div class="tab-content" id="military">
+              <h3>Маршрут для военного лута (Черноруссия)</h3>
+              <div class="route-info">
+                <p>Маршрут для хорошо подготовленных игроков, ищущих военное снаряжение:</p>
+                <ol>
+                  <li><strong>Военная база Каменск</strong> — начальная военная локация среднего риска</li>
+                  <li><strong>Тисы</strong> — военная база на западе с хорошим лутом</li>
+                  <li><strong>Военные лагеря</strong> — небольшие палаточные лагеря вдоль маршрута</li>
+                  <li><strong>Зеленогорск</strong> — военные контрольно-пропускные пункты</li>
+                  <li><strong>СЗАФ (NWAF)</strong> — конечная цель с лучшим военным снаряжением и высоким риском</li>
+                </ol>
+                <p>Предупреждение: этот маршрут сопряжен с высоким риском PvP. Рекомендуется для опытных игроков или групп. Всегда будьте готовы к внезапным столкновениям.</p>
+              </div>
+              <div class="route-image" id="military-route-image"></div>
+            </div>
+            
+            <div class="tab-content" id="medical">
+              <h3>Маршрут для медицинских припасов (Черноруссия)</h3>
+              <div class="route-info">
+                <p>Для сбора медикаментов и средств лечения:</p>
+                <ol>
+                  <li><strong>Больницы в прибрежных городах</strong> — начните с Берензино или Электро</li>
+                  <li><strong>Аптеки в средних городах</strong> — Полана, Новая Собор</li>
+                  <li><strong>Медицинские лагеря</strong> — специализированные медпункты в военных зонах</li>
+                  <li><strong>Клиники в Новоденске</strong> — северные медицинские учреждения</li>
+                  <li><strong>Военные медпункты на СЗАФ</strong> — высокоуровневые медикаменты (высокий риск)</li>
+                </ol>
+                <p>Совет: приоритизируйте бинты, антибиотики, кровоостанавливающие препараты и витамины. Проверяйте медицинские автомобили на дорогах.</p>
+              </div>
+              <div class="route-image" id="medical-route-image"></div>
+            </div>
+            
+            <div class="tab-content" id="survival">
+              <h3>Маршрут для выживания (Черноруссия)</h3>
+              <div class="route-info">
+                <p>Оптимальный путь для сбора ресурсов длительного выживания:</p>
+                <ol>
+                  <li><strong>Рыболовные деревни</strong> — начните с поиска рыболовного снаряжения в прибрежных поселениях</li>
+                  <li><strong>Сельскохозяйственные районы</strong> — Пуста, Тополки для поиска семян и садовых инструментов</li>
+                  <li><strong>Охотничьи домики</strong> — разбросаны по лесам, для охотничьего снаряжения</li>
+                  <li><strong>Промзоны</strong> — инструменты для строительства и ремонта</li>
+                  <li><strong>Водонапорные башни</strong> — ориентиры для определения источников воды</li>
+                </ol>
+                <p>Стратегия: создайте базу недалеко от источника воды, области охоты и леса. Избегайте популярных маршрутов и стройте убежища вдали от основных дорог.</p>
+              </div>
+              <div class="route-image" id="survival-route-image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secret Locations -->
+    <section class="secret-locations">
+      <div class="container">
+        <h2 class="section-title">Секретные локации</h2>
+        <p class="section-intro">На каждой карте есть малоизвестные места, которые могут предложить уникальные ресурсы или стратегические преимущества.</p>
+        
+        <div class="locations-grid">
+          <div class="secret-card">
+            <div class="secret-image" id="secret-image-1"></div>
+            <div class="secret-info">
+              <h3>Затонувший корабль (Черноруссия)</h3>
+              <p>Расположенный у восточного побережья затонувший корабль содержит редкий морской лут и уникальное снаряжение.</p>
+              <p><strong>Координаты:</strong> Северо-восток от Берензино</p>
+              <p><strong>Опасность:</strong> Средняя (открытое пространство)</p>
+            </div>
+          </div>
+          
+          <div class="secret-card">
+            <div class="secret-image" id="secret-image-2"></div>
+            <div class="secret-info">
+              <h3>Подземная лаборатория (Ливония)</h3>
+              <p>Скрытый бункер с военными экспериментами и высокоуровневым снаряжением.</p>
+              <p><strong>Координаты:</strong> Под Радунином</p>
+              <p><strong>Опасность:</strong> Высокая (замкнутое пространство, часто посещается)</p>
+            </div>
+          </div>
+          
+          <div class="secret-card">
+            <div class="secret-image" id="secret-image-3"></div>
+            <div class="secret-info">
+              <h3>Лесной схрон (Черноруссия)</h3>
+              <p>Скрытый тайник с контрабандой, спрятанный в густом лесу северо-западного региона.</p>
+              <p><strong>Координаты:</strong> Северо-запад от Новой Петровки</p>
+              <p><strong>Опасность:</strong> Низкая (удаленное местоположение)</p>
+            </div>
+          </div>
+          
+          <div class="secret-card">
+            <div class="secret-image" id="secret-image-4"></div>
+            <div class="secret-info">
+              <h3>Разбившийся вертолет (Намальск)</h3>
+              <p>Место крушения военного вертолета с редким специализированным снаряжением для холодного климата.</p>
+              <p><strong>Координаты:</strong> Южное плато</p>
+              <p><strong>Опасность:</strong> Средняя (открытое пространство, суровый климат)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>DayZ</h2>
+          <p>Ваш путеводитель по выживанию</p>
+        </div>
+        <div class="footer-links">
+          <h3>Быстрые ссылки</h3>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="gameplay.html">Геймплей</a></li>
+            <li><a href="weapons.html">Оружие</a></li>
+            <li><a href="maps.html">Карты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Руководства</h3>
+          <ul>
+            <li><a href="beginners-guide.html">Для новичков</a></li>
+            <li><a href="survival-basics.html">Основы выживания</a></li>
+            <li><a href="crafting.html">Крафтинг</a></li>
+            <li><a href="base-building.html">Строительство баз</a></li>
+            <li><a href="pvp-tips.html">PvP советы</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <h3>О проекте</h3>
+          <p>Этот сайт создан фанатами игры DayZ для фанатов. Здесь вы найдете полезную информацию, советы и руководства по выживанию в мире DayZ.</p>
+          <a href="about.html" class="btn btn-outline">Узнать больше</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DayZ Фан-сайт. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/maps.js"></script>
+</body>
+</html>

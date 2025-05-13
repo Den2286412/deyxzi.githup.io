@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#e7e5de"/>
+  <path d="M100,100 L700,100 L700,350 L100,350 Z" fill="#d3cfc7"/>
+  <path d="M150,150 C200,120 250,200 300,180 C350,160 400,220 450,200 C500,180 550,250 600,230 C650,210 700,280 750,260" stroke="#517A59" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="180" r="10" fill="#B9804A"/>
+  <circle cx="350" cy="230" r="10" fill="#B9804A"/>
+  <circle cx="500" cy="200" r="10" fill="#B9804A"/>
+  <circle cx="650" cy="170" r="10" fill="#B9804A"/>
+  <text x="400" y="225" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Chernarus Map</text>
+</svg>

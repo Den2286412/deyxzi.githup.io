@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оружие в DayZ - Полный обзор арсенала</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/weapons.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header id="main-header">
+      <div class="logo">
+        <h1>DayZ</h1>
+      </div>
+      <nav>
+        <div class="nav-icon" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="gameplay.html">Геймплей</a></li>
+          <li><a href="weapons.html" class="active">Оружие</a></li>
+          <li><a href="maps.html">Карты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Выживание</a>
+            <ul class="dropdown-menu">
+              <li><a href="survival-basics.html">Основы</a></li>
+              <li><a href="food-water.html">Еда и вода</a></li>
+              <li><a href="medical.html">Медицина</a></li>
+              <li><a href="base-building.html">Строительство баз</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Руководства</a>
+            <ul class="dropdown-menu">
+              <li><a href="beginners-guide.html">Для новичков</a></li>
+              <li><a href="crafting.html">Крафтинг</a></li>
+              <li><a href="pvp-tips.html">Советы по PvP</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="about.html">О сайте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" id="weapons-banner">
+      <div class="banner-content">
+        <h1>Оружие в DayZ</h1>
+        <p>Полный обзор арсенала для выживания</p>
+      </div>
+    </section>
+
+    <!-- Weapons Introduction -->
+    <section class="weapons-intro">
+      <div class="container">
+        <h2 class="section-title">Арсенал выжившего</h2>
+        <p class="section-intro">В мире DayZ выживание часто зависит от способности защитить себя. Разнообразный арсенал игры включает всё: от примитивных самодельных орудий до современного военного оружия. Каждый вид оружия имеет свои преимущества, недостатки и ситуации, где оно наиболее эффективно.</p>
+        
+        <div class="weapons-categories">
+          <button class="category-btn active" data-category="all">Все</button>
+          <button class="category-btn" data-category="melee">Ближний бой</button>
+          <button class="category-btn" data-category="pistols">Пистолеты</button>
+          <button class="category-btn" data-category="shotguns">Дробовики</button>
+          <button class="category-btn" data-category="smgs">Пистолеты-пулеметы</button>
+          <button class="category-btn" data-category="rifles">Винтовки</button>
+          <button class="category-btn" data-category="snipers">Снайперские</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weapons Gallery -->
+    <section class="weapons-gallery">
+      <div class="container">
+        <div class="weapons-grid">
+          <!-- Melee Weapons -->
+          <div class="weapon-card" data-category="melee">
+            <div class="weapon-image" id="weapon-axe"></div>
+            <div class="weapon-info">
+              <h3>Пожарный топор</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Урон:</span>
+                  <span class="stat-value">Высокий</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Скорость:</span>
+                  <span class="stat-value">Низкая</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Дальность:</span>
+                  <span class="stat-value">2м</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Один из самых эффективных инструментов для ближнего боя, который также можно использовать для рубки дров.</p>
+            </div>
+          </div>
+          
+          <div class="weapon-card" data-category="melee">
+            <div class="weapon-image" id="weapon-knife"></div>
+            <div class="weapon-info">
+              <h3>Боевой нож</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Урон:</span>
+                  <span class="stat-value">Средний</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Скорость:</span>
+                  <span class="stat-value">Высокая</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Дальность:</span>
+                  <span class="stat-value">1.5м</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Универсальный инструмент для выживания и боя. Можно использовать для тихого убийства зомби и разделки добычи.</p>
+            </div>
+          </div>
+
+          <!-- Pistols -->
+          <div class="weapon-card" data-category="pistols">
+            <div class="weapon-image" id="weapon-glock"></div>
+            <div class="weapon-info">
+              <h3>Glock 19</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">9x19мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">15 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Урон:</span>
+                  <span class="stat-value">Средний</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Надежный и распространенный пистолет, часто встречающийся на полицейских участках.</p>
+            </div>
+          </div>
+          
+          <div class="weapon-card" data-category="pistols">
+            <div class="weapon-image" id="weapon-magnum"></div>
+            <div class="weapon-info">
+              <h3>Револьвер .357</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">.357</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">6 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Урон:</span>
+                  <span class="stat-value">Высокий</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Мощный револьвер с высоким уроном, способный останавливать противников одним выстрелом.</p>
+            </div>
+          </div>
+
+          <!-- Shotguns -->
+          <div class="weapon-card" data-category="shotguns">
+            <div class="weapon-image" id="weapon-shotgun"></div>
+            <div class="weapon-info">
+              <h3>Помповый дробовик</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">12 мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">5+1 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Урон:</span>
+                  <span class="stat-value">Очень высокий</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Превосходное оружие ближнего боя с разрушительной силой на коротких дистанциях.</p>
+            </div>
+          </div>
+          
+          <!-- SMGs -->
+          <div class="weapon-card" data-category="smgs">
+            <div class="weapon-image" id="weapon-mp5"></div>
+            <div class="weapon-info">
+              <h3>MP5</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">9x19мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">30 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Скорострельность:</span>
+                  <span class="stat-value">Высокая</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Компактный пистолет-пулемет, идеальный для городских боев и зачистки помещений.</p>
+            </div>
+          </div>
+
+          <!-- Rifles -->
+          <div class="weapon-card" data-category="rifles">
+            <div class="weapon-image" id="weapon-m4"></div>
+            <div class="weapon-info">
+              <h3>M4A1</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">5.56x45мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">30 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Режимы огня:</span>
+                  <span class="stat-value">Одиночный/Авто</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Высокоточная штурмовая винтовка с возможностью установки множества модификаций.</p>
+            </div>
+          </div>
+          
+          <div class="weapon-card" data-category="rifles">
+            <div class="weapon-image" id="weapon-ak"></div>
+            <div class="weapon-info">
+              <h3>AKM</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">7.62x39мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">30 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Режимы огня:</span>
+                  <span class="stat-value">Одиночный/Авто</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Надежная винтовка с высоким уроном, эффективная на средних и длинных дистанциях.</p>
+            </div>
+          </div>
+
+          <!-- Snipers -->
+          <div class="weapon-card" data-category="snipers">
+            <div class="weapon-image" id="weapon-mosin"></div>
+            <div class="weapon-info">
+              <h3>Мосин-Наган</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">7.62x54мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">5 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Точность:</span>
+                  <span class="stat-value">Очень высокая</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Классическая винтовка с высокой точностью и дальностью, идеальна для снайперских позиций.</p>
+            </div>
+          </div>
+          
+          <div class="weapon-card" data-category="snipers">
+            <div class="weapon-image" id="weapon-svd"></div>
+            <div class="weapon-info">
+              <h3>СВД Драгунова</h3>
+              <div class="weapon-stats">
+                <div class="stat">
+                  <span class="stat-label">Калибр:</span>
+                  <span class="stat-value">7.62x54мм</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Вместимость:</span>
+                  <span class="stat-value">10 патр.</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Точность:</span>
+                  <span class="stat-value">Очень высокая</span>
+                </div>
+              </div>
+              <p class="weapon-desc">Полуавтоматическая снайперская винтовка, обеспечивающая высокую скорострельность и урон.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ammo Types Section -->
+    <section class="ammo-section">
+      <div class="container">
+        <h2 class="section-title">Типы боеприпасов</h2>
+        <p class="section-intro">Выбор правильных боеприпасов так же важен, как и само оружие. Различные типы патронов имеют разные характеристики пробивания брони, урона и дальности.</p>
+        
+        <div class="ammo-table-container">
+          <table class="ammo-table">
+            <thead>
+              <tr>
+                <th>Калибр</th>
+                <th>Совместимое оружие</th>
+                <th>Урон</th>
+                <th>Пробитие брони</th>
+                <th>Доступность</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9x19мм</td>
+                <td>Glock 19, MP5, UMP-45</td>
+                <td>Средний</td>
+                <td>Низкое</td>
+                <td>Высокая</td>
+              </tr>
+              <tr>
+                <td>.45 ACP</td>
+                <td>1911, FNX-45</td>
+                <td>Высокий</td>
+                <td>Низкое</td>
+                <td>Средняя</td>
+              </tr>
+              <tr>
+                <td>.357</td>
+                <td>Револьвер .357</td>
+                <td>Очень высокий</td>
+                <td>Среднее</td>
+                <td>Низкая</td>
+              </tr>
+              <tr>
+                <td>5.56x45мм</td>
+                <td>M4A1, M16, SCAR-L</td>
+                <td>Средний</td>
+                <td>Среднее</td>
+                <td>Средняя</td>
+              </tr>
+              <tr>
+                <td>7.62x39мм</td>
+                <td>AKM, SKS</td>
+                <td>Высокий</td>
+                <td>Среднее</td>
+                <td>Высокая</td>
+              </tr>
+              <tr>
+                <td>7.62x54мм</td>
+                <td>Мосин-Наган, СВД</td>
+                <td>Очень высокий</td>
+                <td>Высокое</td>
+                <td>Низкая</td>
+              </tr>
+              <tr>
+                <td>12мм (Дробь)</td>
+                <td>Помповый дробовик, SAIGA-12</td>
+                <td>Крайне высокий</td>
+                <td>Низкое</td>
+                <td>Средняя</td>
+              </tr>
+              <tr>
+                <td>.308 Winchester</td>
+                <td>Blaze, Tundra</td>
+                <td>Очень высокий</td>
+                <td>Высокое</td>
+                <td>Низкая</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weapon Attachments -->
+    <section class="attachments-section">
+      <div class="container">
+        <h2 class="section-title">Модификации оружия</h2>
+        <p class="section-intro">Большинство оружия в DayZ можно модифицировать для улучшения характеристик. Правильные модификации могут значительно повысить эффективность вашего арсенала.</p>
+        
+        <div class="attachments-grid">
+          <div class="attachment-card">
+            <div class="attachment-icon" id="attachment-scope"></div>
+            <h3>Оптические прицелы</h3>
+            <p>Улучшают точность и дальность стрельбы, особенно эффективны на винтовках и снайперском оружии.</p>
+            <div class="compatible-weapons">
+              <span>Совместимо с:</span> M4A1, AKM, Мосин-Наган, СВД
+            </div>
+          </div>
+          
+          <div class="attachment-card">
+            <div class="attachment-icon" id="attachment-suppressor"></div>
+            <h3>Глушители</h3>
+            <p>Снижают звук выстрела, помогая не привлекать внимание зомби и других игроков.</p>
+            <div class="compatible-weapons">
+              <span>Совместимо с:</span> M4A1, AKM, MP5, Glock 19
+            </div>
+          </div>
+          
+          <div class="attachment-card">
+            <div class="attachment-icon" id="attachment-buttstock"></div>
+            <h3>Приклады</h3>
+            <p>Улучшают контроль отдачи и точность при автоматической стрельбе.</p>
+            <div class="compatible-weapons">
+              <span>Совместимо с:</span> M4A1, AKM, MP5
+            </div>
+          </div>
+          
+          <div class="attachment-card">
+            <div class="attachment-icon" id="attachment-handguard"></div>
+            <h3>Цевье</h3>
+            <p>Позволяет установить дополнительные модификации и улучшает эргономику оружия.</p>
+            <div class="compatible-weapons">
+              <span>Совместимо с:</span> M4A1, AKM
+            </div>
+          </div>
+          
+          <div class="attachment-card">
+            <div class="attachment-icon" id="attachment-magazine"></div>
+            <h3>Расширенные магазины</h3>
+            <p>Увеличивают количество патронов, которые можно зарядить в оружие.</p>
+            <div class="compatible-weapons">
+              <span>Совместимо с:</span> M4A1, AKM, MP5, Glock 19
+            </div>
+          </div>
+          
+          <div class="attachment-card">
+            <div class="attachment-icon" id="attachment-compensator"></div>
+            <h3>Компенсаторы</h3>
+            <p>Уменьшают подброс ствола при стрельбе, повышая точность при серийной стрельбе.</p>
+            <div class="compatible-weapons">
+              <span>Совместимо с:</span> M4A1, AKM, Glock 19
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combat Strategies -->
+    <section class="combat-section">
+      <div class="container">
+        <h2 class="section-title">Боевые стратегии</h2>
+        
+        <div class="combat-tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="solo">Соло</button>
+            <button class="tab-btn" data-tab="squad">Группа</button>
+            <button class="tab-btn" data-tab="stealth">Стелс</button>
+            <button class="tab-btn" data-tab="base">Оборона базы</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-content active" id="solo">
+              <h3>Тактики для одиночной игры</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Для соло-игроков важна осторожность и выбор боев:</p>
+                  <ul>
+                    <li><strong>Избегайте превосходящих сил</strong> — нападайте только при наличии преимущества</li>
+                    <li><strong>Тихое оружие</strong> — используйте глушители или луки для скрытных атак</li>
+                    <li><strong>Постоянно перемещайтесь</strong> — не задерживайтесь на одном месте после боя</li>
+                    <li><strong>Используйте засады</strong> — занимайте позиции с преимуществом обзора</li>
+                    <li><strong>Подготовка</strong> — имейте запасные магазины и медикаменты для быстрого восстановления</li>
+                  </ul>
+                </div>
+                <div class="content-image" id="solo-combat-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="squad">
+              <h3>Групповая тактика</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Эффективное взаимодействие в группе:</p>
+                  <ul>
+                    <li><strong>Распределение ролей</strong> — снайпер, штурмовик, медик, разведчик</li>
+                    <li><strong>Коммуникация</strong> — используйте четкие обозначения направлений и ориентиров</li>
+                    <li><strong>Перекрестный огонь</strong> — координируйте атаки с разных углов</li>
+                    <li><strong>Огневая поддержка</strong> — часть группы ведет огонь, пока другие перемещаются</li>
+                    <li><strong>Обмен ресурсами</strong> — делитесь боеприпасами и медикаментами</li>
+                  </ul>
+                </div>
+                <div class="content-image" id="squad-combat-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="stealth">
+              <h3>Стелс-подход</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Скрытность и незаметность:</p>
+                  <ul>
+                    <li><strong>Камуфляж</strong> — одежда под окружающую среду</li>
+                    <li><strong>Бесшумное оружие</strong> — луки, арбалеты, оружие с глушителями</li>
+                    <li><strong>Передвижение ползком</strong> — снижает видимость на больших расстояниях</li>
+                    <li><strong>Избегайте открытых пространств</strong> — используйте лесные массивы и тени</li>
+                    <li><strong>Терпение</strong> — выжидайте идеальный момент для атаки</li>
+                  </ul>
+                </div>
+                <div class="content-image" id="stealth-combat-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="base">
+              <h3>Защита базы</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Эффективная оборона вашего укрытия:</p>
+                  <ul>
+                    <li><strong>Многослойная защита</strong> — несколько дверей и стен для преодоления</li>
+                    <li><strong>Снайперские позиции</strong> — места с хорошим обзором окрестностей</li>
+                    <li><strong>Ловушки</strong> — используйте мины или неожиданные обходные пути</li>
+                    <li><strong>Разделение ресурсов</strong> — не храните всё ценное в одном месте</li>
+                    <li><strong>Запасные выходы</strong> — пути для отступления в случае проигрыша</li>
+                  </ul>
+                </div>
+                <div class="content-image" id="base-defense-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>DayZ</h2>
+          <p>Ваш путеводитель по выживанию</p>
+        </div>
+        <div class="footer-links">
+          <h3>Быстрые ссылки</h3>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="gameplay.html">Геймплей</a></li>
+            <li><a href="weapons.html">Оружие</a></li>
+            <li><a href="maps.html">Карты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Руководства</h3>
+          <ul>
+            <li><a href="beginners-guide.html">Для новичков</a></li>
+            <li><a href="survival-basics.html">Основы выживания</a></li>
+            <li><a href="crafting.html">Крафтинг</a></li>
+            <li><a href="base-building.html">Строительство баз</a></li>
+            <li><a href="pvp-tips.html">PvP советы</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <h3>О проекте</h3>
+          <p>Этот сайт создан фанатами игры DayZ для фанатов. Здесь вы найдете полезную информацию, советы и руководства по выживанию в мире DayZ.</p>
+          <a href="about.html" class="btn btn-outline">Узнать больше</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DayZ Фан-сайт. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/weapons.js"></script>
+</body>
+</html>

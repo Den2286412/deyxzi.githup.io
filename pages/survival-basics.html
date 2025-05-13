@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основы выживания в DayZ - Советы и руководства</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/survival.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header id="main-header">
+      <div class="logo">
+        <h1>DayZ</h1>
+      </div>
+      <nav>
+        <div class="nav-icon" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="gameplay.html">Геймплей</a></li>
+          <li><a href="weapons.html">Оружие</a></li>
+          <li><a href="maps.html">Карты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Выживание</a>
+            <ul class="dropdown-menu">
+              <li><a href="survival-basics.html" class="active">Основы</a></li>
+              <li><a href="food-water.html">Еда и вода</a></li>
+              <li><a href="medical.html">Медицина</a></li>
+              <li><a href="base-building.html">Строительство баз</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Руководства</a>
+            <ul class="dropdown-menu">
+              <li><a href="beginners-guide.html">Для новичков</a></li>
+              <li><a href="crafting.html">Крафтинг</a></li>
+              <li><a href="pvp-tips.html">Советы по PvP</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="about.html">О сайте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" id="survival-banner">
+      <div class="banner-content">
+        <h1>Основы выживания</h1>
+        <p>Ключевые навыки для долгой жизни в мире DayZ</p>
+      </div>
+    </section>
+
+    <!-- Survival Introduction -->
+    <section class="survival-intro">
+      <div class="container">
+        <h2 class="section-title">Выживание в мире DayZ</h2>
+        <p class="section-intro">Выживание в DayZ — это комплексный процесс, требующий внимания к множеству аспектов: от базовых потребностей вашего персонажа до взаимодействия с другими игроками и управления ресурсами.</p>
+        
+        <div class="survival-overview">
+          <div class="overview-image" id="survival-image"></div>
+          <div class="overview-content">
+            <h3>Ключевые компоненты выживания</h3>
+            <ul class="overview-list">
+              <li>
+                <div class="overview-icon" id="hunger-icon"></div>
+                <div class="overview-item">
+                  <h4>Голод и жажда</h4>
+                  <p>Поддержание достаточного уровня питания и гидратации — основа выживания в DayZ.</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview-icon" id="health-icon"></div>
+                <div class="overview-item">
+                  <h4>Здоровье и лечение</h4>
+                  <p>Уметь лечить раны, болезни и поддерживать общее здоровье персонажа.</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview-icon" id="temperature-icon"></div>
+                <div class="overview-item">
+                  <h4>Температура тела</h4>
+                  <p>Защита от холода, перегрева и погодных условий.</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview-icon" id="threat-icon"></div>
+                <div class="overview-item">
+                  <h4>Угрозы и защита</h4>
+                  <p>Оборона от зомби, диких животных и других игроков.</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview-icon" id="resources-icon"></div>
+                <div class="overview-item">
+                  <h4>Управление ресурсами</h4>
+                  <p>Эффективное использование ограниченных запасов и инвентаря.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Basic Needs -->
+    <section class="basic-needs">
+      <div class="container">
+        <h2 class="section-title">Базовые потребности</h2>
+        
+        <div class="needs-tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="food">Питание</button>
+            <button class="tab-btn" data-tab="water">Вода</button>
+            <button class="tab-btn" data-tab="warmth">Тепло</button>
+            <button class="tab-btn" data-tab="rest">Отдых</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-content active" id="food">
+              <h3>Поиск и добыча пищи</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Источники пищи в DayZ разнообразны, от консервов до свежего мяса:</p>
+                  <ul>
+                    <li><strong>Консервированные продукты</strong> — найденные в зданиях, самый безопасный источник питания</li>
+                    <li><strong>Фрукты и овощи</strong> — можно найти в садах или вырастить самостоятельно</li>
+                    <li><strong>Мясо животных</strong> — требует охоты и приготовления, но очень питательно</li>
+                    <li><strong>Рыба</strong> — требует удочки и наживки, но является стабильным источником пищи</li>
+                  </ul>
+                  <p><strong>Важно:</strong> сырое мясо может вызвать болезнь, всегда готовьте его на костре или печке. Следите за индикатором голода — истощение снижает здоровье и выносливость.</p>
+                </div>
+                <div class="content-image" id="food-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="water">
+              <h3>Поиск воды и предотвращение обезвоживания</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Вода так же важна, как и пища, и требует особого внимания:</p>
+                  <ul>
+                    <li><strong>Колодцы</strong> — основной источник питьевой воды в населенных пунктах</li>
+                    <li><strong>Водоёмы</strong> — реки и озера, требуют очистки воды перед употреблением</li>
+                    <li><strong>Бутылки и фляги</strong> — позволяют хранить и переносить воду</li>
+                    <li><strong>Дождевая вода</strong> — можно собирать в контейнеры во время дождя</li>
+                  </ul>
+                  <p><strong>Важно:</strong> неочищенная вода из природных источников может вызвать холеру. Используйте хлорные таблетки или кипятите воду перед употреблением.</p>
+                </div>
+                <div class="content-image" id="water-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="warmth">
+              <h3>Поддержание температуры тела</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Переохлаждение — серьезная угроза, особенно в ночное время и во время дождя:</p>
+                  <ul>
+                    <li><strong>Одежда</strong> — правильная экипировка с высокой изоляцией защищает от холода</li>
+                    <li><strong>Костры</strong> — обеспечивают тепло и возможность высушить мокрую одежду</li>
+                    <li><strong>Укрытия</strong> — защищают от дождя и ветра</li>
+                    <li><strong>Движение</strong> — активность помогает поддерживать температуру тела</li>
+                  </ul>
+                  <p><strong>Совет:</strong> всегда носите с собой материалы для разведения костра (спички/зажигалка, растопка, поленья). Мокрая одежда значительно снижает изоляцию, снимайте и сушите её у костра.</p>
+                </div>
+                <div class="content-image" id="warmth-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="rest">
+              <h3>Отдых и восстановление</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Правильное управление энергией персонажа помогает в выживании:</p>
+                  <ul>
+                    <li><strong>Выносливость</strong> — расходуется при беге и тяжелых действиях, восстанавливается при ходьбе или стоянии</li>
+                    <li><strong>Кровопотеря</strong> — снижает выносливость и требует отдыха для восстановления</li>
+                    <li><strong>Безопасный отдых</strong> — найдите укрытое место для восстановления здоровья</li>
+                    <li><strong>Временные убежища</strong> — палатки и временные укрытия для безопасного отдыха</li>
+                  </ul>
+                  <p><strong>Совет:</strong> чередуйте бег и ходьбу для эффективного передвижения. После интенсивных действий (бой, длительный бег) делайте короткие перерывы для восстановления.</p>
+                </div>
+                <div class="content-image" id="rest-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Threats and Protection -->
+    <section class="threats-section">
+      <div class="container">
+        <h2 class="section-title">Угрозы и защита</h2>
+        <p class="section-intro">В мире DayZ вас ждут разнообразные опасности — от зомби и диких животных до других игроков и суровой среды.</p>
+        
+        <div class="threats-grid">
+          <div class="threat-card">
+            <div class="threat-icon" id="zombie-icon"></div>
+            <h3>Зомби</h3>
+            <p>Инфицированные представляют постоянную угрозу в населенных пунктах. Они реагируют на звук и движение.</p>
+            <div class="protection-tips">
+              <h4>Защита:</h4>
+              <ul>
+                <li>Двигайтесь медленно и тихо в населенных пунктах</li>
+                <li>Используйте холодное оружие для бесшумной ликвидации</li>
+                <li>Огнестрельное оружие привлекает больше зомби</li>
+                <li>Используйте здания и препятствия для отрыва от преследования</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="threat-card">
+            <div class="threat-icon" id="players-icon"></div>
+            <h3>Другие игроки</h3>
+            <p>Самая непредсказуемая и опасная угроза. Игроки могут быть как дружелюбными, так и враждебными.</p>
+            <div class="protection-tips">
+              <h4>Защита:</h4>
+              <ul>
+                <li>Наблюдайте за окружением, особенно в стратегических точках</li>
+                <li>Избегайте открытых пространств при передвижении</li>
+                <li>Будьте осторожны при общении — используйте голосовой чат на расстоянии</li>
+                <li>Не показывайте всё своё снаряжение при первой встрече</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="threat-card">
+            <div class="threat-icon" id="animals-icon"></div>
+            <h3>Дикие животные</h3>
+            <p>Волки, медведи и другие хищники представляют угрозу в дикой местности.</p>
+            <div class="protection-tips">
+              <h4>Защита:</h4>
+              <ul>
+                <li>Будьте внимательны в лесах и горных районах</li>
+                <li>При встрече с волками используйте огонь или громкие звуки</li>
+                <li>От медведей лучше убегать в укрытие</li>
+                <li>Если возможно, забирайтесь на возвышенности</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="threat-card">
+            <div class="threat-icon" id="disease-icon"></div>
+            <h3>Болезни</h3>
+            <p>От простуды до холеры и пищевого отравления — болезни могут значительно ослабить персонажа.</p>
+            <div class="protection-tips">
+              <h4>Защита:</h4>
+              <ul>
+                <li>Очищайте воду перед употреблением</li>
+                <li>Готовьте мясо полностью</li>
+                <li>Не ходите долго в мокрой одежде</li>
+                <li>Используйте витамины для профилактики</li>
+                <li>Носите с собой базовые лекарства</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resource Management -->
+    <section class="resource-section">
+      <div class="container">
+        <h2 class="section-title">Управление ресурсами</h2>
+        <p class="section-intro">Эффективное использование ограниченных ресурсов и управление инвентарем — ключевые навыки для выживания.</p>
+        
+        <div class="resources-content">
+          <div class="resource-image" id="inventory-manage-image"></div>
+          <div class="resource-info">
+            <h3>Организация инвентаря</h3>
+            <p>Правильное распределение предметов поможет вам быть готовым к различным ситуациям:</p>
+            <ul class="resource-tips">
+              <li><strong>Приоритизация</strong> — распределяйте предметы по важности: выживание &gt; медицина &gt; защита &gt; прочее</li>
+              <li><strong>Быстрый доступ</strong> — важные предметы (оружие, бинты, еда) размещайте в быстром доступе</li>
+              <li><strong>Распределение веса</strong> — тяжелые предметы распределяйте так, чтобы не перегружать персонажа</li>
+              <li><strong>Специализированные контейнеры</strong> — используйте аптечки для медикаментов, подсумки для патронов</li>
+            </ul>
+            
+            <h3>Основные ресурсы для выживания</h3>
+            <div class="resource-categories">
+              <div class="resource-category">
+                <h4>Обязательные</h4>
+                <ul>
+                  <li>Нож или режущий инструмент</li>
+                  <li>Источник огня (спички, зажигалка)</li>
+                  <li>Емкость для воды</li>
+                  <li>Бинты</li>
+                  <li>Базовое оружие</li>
+                </ul>
+              </div>
+              <div class="resource-category">
+                <h4>Желательные</h4>
+                <ul>
+                  <li>Рюкзак с хорошей вместимостью</li>
+                  <li>Средства для очистки воды</li>
+                  <li>Запасная одежда</li>
+                  <li>Комплексные медикаменты</li>
+                  <li>Инструменты для ремонта</li>
+                </ul>
+              </div>
+              <div class="resource-category">
+                <h4>Специализированные</h4>
+                <ul>
+                  <li>Рыболовные снасти</li>
+                  <li>Инструменты для строительства</li>
+                  <li>Навигационное оборудование</li>
+                  <li>Оптические прицелы</li>
+                  <li>Материалы для крафта</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Survival Tips -->
+    <section class="survival-tips-section">
+      <div class="container">
+        <h2 class="section-title">Советы опытных выживших</h2>
+        
+        <div class="tips-container">
+          <div class="tip-item">
+            <div class="tip-number">01</div>
+            <div class="tip-content">
+              <h3>Наблюдение — ключ к выживанию</h3>
+              <p>Всегда сканируйте окружение перед входом в населенные пункты. Используйте бинокль для разведки на расстоянии. Прислушивайтесь к звукам — они могут выдать присутствие других игроков или животных.</p>
+            </div>
+          </div>
+          
+          <div class="tip-item">
+            <div class="tip-number">02</div>
+            <div class="tip-content">
+              <h3>Не накапливайте больше, чем можете использовать</h3>
+              <p>Сосредоточьтесь на качестве, а не количестве снаряжения. Лишний вес замедляет передвижение и делает вас легкой целью. Лучше иметь один надежный набор снаряжения, чем носить с собой запасы на месяцы.</p>
+            </div>
+          </div>
+          
+          <div class="tip-item">
+            <div class="tip-number">03</div>
+            <div class="tip-content">
+              <h3>Планируйте заранее</h3>
+              <p>Перед длительным походом определите маршрут и цель. Отметьте источники воды, возможные укрытия и точки для пополнения запасов. Всегда имейте план отступления и альтернативные пути.</p>
+            </div>
+          </div>
+          
+          <div class="tip-item">
+            <div class="tip-number">04</div>
+            <div class="tip-content">
+              <h3>Ночь — и друг, и враг</h3>
+              <p>Ночью сложнее ориентироваться, но она дает преимущество скрытности. Используйте темное время для рискованных перемещений или набегов на военные объекты. Источники света выдают ваше положение — используйте их с осторожностью.</p>
+            </div>
+          </div>
+          
+          <div class="tip-item">
+            <div class="tip-number">05</div>
+            <div class="tip-content">
+              <h3>Не доверяйте никому полностью</h3>
+              <p>Даже дружелюбные игроки могут предать в подходящий момент. Всегда сохраняйте дистанцию при первой встрече, не показывайте все свои ресурсы и держите оружие наготове. Доверие строится постепенно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Mistakes -->
+    <section class="mistakes-section">
+      <div class="container">
+        <h2 class="section-title">Распространенные ошибки новичков</h2>
+        
+        <div class="mistakes-grid">
+          <div class="mistake-card">
+            <div class="mistake-icon" id="mistake-icon-1"></div>
+            <h3>Слишком открытое передвижение</h3>
+            <p>Бег по открытым дорогам и полям делает вас легкой мишенью. <strong>Вместо этого:</strong> используйте лесные тропы, передвигайтесь от укрытия к укрытию.</p>
+          </div>
+          
+          <div class="mistake-card">
+            <div class="mistake-icon" id="mistake-icon-2"></div>
+            <h3>Игнорирование потребностей персонажа</h3>
+            <p>Пренебрежение индикаторами голода, жажды и температуры ведет к быстрой смерти. <strong>Вместо этого:</strong> регулярно проверяйте состояние персонажа.</p>
+          </div>
+          
+          <div class="mistake-card">
+            <div class="mistake-icon" id="mistake-icon-3"></div>
+            <h3>Безрассудное потребление ресурсов</h3>
+            <p>Немедленное употребление всех найденных продуктов и воды. <strong>Вместо этого:</strong> планируйте потребление, сохраняйте запасы на критические ситуации.</p>
+          </div>
+          
+          <div class="mistake-card">
+            <div class="mistake-icon" id="mistake-icon-4"></div>
+            <h3>Отсутствие адаптации</h3>
+            <p>Следование одной стратегии независимо от ситуации. <strong>Вместо этого:</strong> адаптируйтесь к окружающим условиям и имеющимся ресурсам.</p>
+          </div>
+          
+          <div class="mistake-card">
+            <div class="mistake-icon" id="mistake-icon-5"></div>
+            <h3>Слишком шумные действия</h3>
+            <p>Шум от стрельбы и громких действий привлекает внимание. <strong>Вместо этого:</strong> используйте тихие способы решения проблем, когда это возможно.</p>
+          </div>
+          
+          <div class="mistake-card">
+            <div class="mistake-icon" id="mistake-icon-6"></div>
+            <h3>Неподготовленность к PvP</h3>
+            <p>Вступление в бой без плана или отступления. <strong>Вместо этого:</strong> оценивайте ситуацию, имейте план отхода, выбирайте бои с преимуществом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>DayZ</h2>
+          <p>Ваш путеводитель по выживанию</p>
+        </div>
+        <div class="footer-links">
+          <h3>Быстрые ссылки</h3>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="gameplay.html">Геймплей</a></li>
+            <li><a href="weapons.html">Оружие</a></li>
+            <li><a href="maps.html">Карты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Руководства</h3>
+          <ul>
+            <li><a href="beginners-guide.html">Для новичков</a></li>
+            <li><a href="survival-basics.html">Основы выживания</a></li>
+            <li><a href="crafting.html">Крафтинг</a></li>
+            <li><a href="base-building.html">Строительство баз</a></li>
+            <li><a href="pvp-tips.html">PvP советы</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <h3>О проекте</h3>
+          <p>Этот сайт создан фанатами игры DayZ для фанатов. Здесь вы найдете полезную информацию, советы и руководства по выживанию в мире DayZ.</p>
+          <a href="about.html" class="btn btn-outline">Узнать больше</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DayZ Фан-сайт. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/survival.js"></script>
+</body>
+</html>

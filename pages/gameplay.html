@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Геймплей DayZ - Основные механики и особенности</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/gameplay.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header id="main-header">
+      <div class="logo">
+        <h1>DayZ</h1>
+      </div>
+      <nav>
+        <div class="nav-icon" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="gameplay.html" class="active">Геймплей</a></li>
+          <li><a href="weapons.html">Оружие</a></li>
+          <li><a href="maps.html">Карты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Выживание</a>
+            <ul class="dropdown-menu">
+              <li><a href="survival-basics.html">Основы</a></li>
+              <li><a href="food-water.html">Еда и вода</a></li>
+              <li><a href="medical.html">Медицина</a></li>
+              <li><a href="base-building.html">Строительство баз</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Руководства</a>
+            <ul class="dropdown-menu">
+              <li><a href="beginners-guide.html">Для новичков</a></li>
+              <li><a href="crafting.html">Крафтинг</a></li>
+              <li><a href="pvp-tips.html">Советы по PvP</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="about.html">О сайте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" id="gameplay-banner">
+      <div class="banner-content">
+        <h1>Геймплей DayZ</h1>
+        <p>Основные механики и особенности игры</p>
+      </div>
+    </section>
+
+    <!-- Gameplay Overview -->
+    <section class="gameplay-overview">
+      <div class="container">
+        <h2 class="section-title">Основы геймплея</h2>
+        <p class="section-intro">DayZ — это хардкорная симуляция выживания в постапокалиптическом мире, где вам предстоит бороться с голодом, жаждой, болезнями, зомби и другими игроками.</p>
+        
+        <div class="gameplay-features">
+          <div class="feature">
+            <div class="feature-icon survival-icon"></div>
+            <div class="feature-content">
+              <h3>Симуляция выживания</h3>
+              <p>В DayZ детально проработана система выживания. Вам необходимо следить за голодом, жаждой, температурой тела и здоровьем. Игнорирование любого из этих аспектов может привести к болезни или смерти.</p>
+            </div>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-icon permadeath-icon"></div>
+            <div class="feature-content">
+              <h3>Перманентная смерть</h3>
+              <p>В DayZ действует механика перманентной смерти. Если ваш персонаж умирает, вы теряете все предметы и прогресс, начиная игру заново на побережье с базовым снаряжением.</p>
+            </div>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-icon pvp-icon"></div>
+            <div class="feature-content">
+              <h3>PvP и социальные взаимодействия</h3>
+              <p>Встречи с другими игроками могут быть как дружественными, так и враждебными. Отсутствие четких правил создает уникальные социальные динамики, где доверие — редкий и ценный ресурс.</p>
+            </div>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-icon crafting-icon"></div>
+            <div class="feature-content">
+              <h3>Крафтинг и строительство</h3>
+              <p>В игре представлена обширная система крафтинга, позволяющая создавать инструменты, оружие, снаряжение и строить базы для хранения ресурсов и защиты от угроз.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Mechanics -->
+    <section class="game-mechanics">
+      <div class="container">
+        <h2 class="section-title">Ключевые механики</h2>
+        
+        <div class="mechanics-tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="health">Здоровье</button>
+            <button class="tab-btn" data-tab="inventory">Инвентарь</button>
+            <button class="tab-btn" data-tab="zombies">Зомби</button>
+            <button class="tab-btn" data-tab="weather">Погода</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-content active" id="health">
+              <h3>Система здоровья</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Система здоровья в DayZ комплексная и реалистичная. Ваш персонаж может получить различные травмы и заболевания:</p>
+                  <ul>
+                    <li><strong>Кровотечение</strong> — возникает при ранениях и требует бинтов для остановки</li>
+                    <li><strong>Переломы</strong> — ограничивают передвижение, для лечения требуются шины</li>
+                    <li><strong>Болезни</strong> — включают холеру, грипп, отравление, требуют специфических лекарств</li>
+                    <li><strong>Кровопотеря</strong> — приводит к потере сознания, для восстановления нужны переливания крови</li>
+                  </ul>
+                  <p>Поддержание здоровья требует следить за питанием, гидратацией, температурой тела и обработкой ран.</p>
+                </div>
+                <div class="content-image" id="health-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="inventory">
+              <h3>Система инвентаря</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Инвентарь в DayZ имеет ограничения по весу и размеру, что заставляет игроков принимать важные решения о том, что брать с собой:</p>
+                  <ul>
+                    <li><strong>Одежда</strong> — разные предметы одежды предоставляют разное количество слотов</li>
+                    <li><strong>Рюкзаки</strong> — увеличивают вместимость инвентаря, но могут замедлять передвижение</li>
+                    <li><strong>Жилеты</strong> — предоставляют дополнительное место для хранения специфических предметов</li>
+                    <li><strong>Управление ресурсами</strong> — критически важно для долгосрочного выживания</li>
+                  </ul>
+                  <p>Эффективное использование инвентаря и знание приоритетов предметов играют ключевую роль в выживании.</p>
+                </div>
+                <div class="content-image" id="inventory-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="zombies">
+              <h3>Зомби и ИИ угрозы</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Зомби в DayZ представляют постоянную угрозу в городах и населённых пунктах:</p>
+                  <ul>
+                    <li><strong>Реакция на звук и зрение</strong> — зомби реагируют на громкие звуки и могут заметить игрока на открытой местности</li>
+                    <li><strong>Разные типы зомби</strong> — от обычных до специальных, с различной скоростью и прочностью</li>
+                    <li><strong>Скрытность</strong> — тихое передвижение и избегание больших групп зомби часто предпочтительнее открытого боя</li>
+                    <li><strong>Приманка и отвлечение</strong> — можно использовать шум для отвлечения зомби</li>
+                  </ul>
+                  <p>Несмотря на то, что один зомби может не представлять большой угрозы, группа зомби способна быстро истощить ваши ресурсы и привлечь нежелательное внимание других игроков.</p>
+                </div>
+                <div class="content-image" id="zombies-image"></div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="weather">
+              <h3>Погодные условия</h3>
+              <div class="content-columns">
+                <div class="content-text">
+                  <p>Погодная система в DayZ влияет на игровой процесс и требует адаптации:</p>
+                  <ul>
+                    <li><strong>Дождь</strong> — намокшая одежда снижает температуру тела, повышая риск заболеваний</li>
+                    <li><strong>Холод</strong> — требует теплой одежды и разведения костров для поддержания температуры</li>
+                    <li><strong>Туман</strong> — ограничивает видимость, влияя на ПвП и поиск ресурсов</li>
+                    <li><strong>Ночь</strong> — требует использования источников света или приборов ночного видения</li>
+                  </ul>
+                  <p>Динамическая смена погоды создает дополнительные слои сложности и требует от игроков постоянной адаптации стратегии выживания.</p>
+                </div>
+                <div class="content-image" id="weather-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gameplay Tips -->
+    <section class="gameplay-tips">
+      <div class="container">
+        <h2 class="section-title">Советы по игровому процессу</h2>
+        
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-icon" id="tip-icon-1"></div>
+            <h3>Управление ресурсами</h3>
+            <p>Планируйте маршруты с учетом доступа к воде. Носите с собой запасы еды и воды. Не забывайте о запасных медикаментах для экстренных ситуаций.</p>
+          </div>
+          
+          <div class="tip-card">
+            <div class="tip-icon" id="tip-icon-2"></div>
+            <h3>Передвижение</h3>
+            <p>Избегайте открытых дорог и полей, где вы легко заметны. Используйте лесные маршруты и следите за окружением. Планируйте маршрут заранее.</p>
+          </div>
+          
+          <div class="tip-card">
+            <div class="tip-icon" id="tip-icon-3"></div>
+            <h3>Взаимодействие с игроками</h3>
+            <p>Будьте осторожны при встрече с другими выжившими. Используйте голосовой чат для коммуникации, но помните, что не все игроки дружелюбны.</p>
+          </div>
+          
+          <div class="tip-card">
+            <div class="tip-icon" id="tip-icon-4"></div>
+            <h3>Строительство базы</h3>
+            <p>Выбирайте скрытые локации для базы. Стройте несколько слоев защиты. Разделяйте ценные предметы по разным контейнерам на случай рейда.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Что произойдет, если мой персонаж умрет?</h3>
+              <span class="faq-toggle"></span>
+            </div>
+            <div class="faq-answer">
+              <p>После смерти персонажа вы потеряете все предметы и прогресс. Вы начнете новую жизнь на побережье с базовым стартовым снаряжением. Это основной принцип DayZ, известный как "перманентная смерть".</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Как найти друзей в игре?</h3>
+              <span class="faq-toggle"></span>
+            </div>
+            <div class="faq-answer">
+              <p>DayZ не имеет встроенной системы поиска друзей на карте. Вам придется координировать встречу через внешние средства связи, а затем найти друг друга ориентируясь по локациям и ориентирам на карте.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Как защититься от зомби?</h3>
+              <span class="faq-toggle"></span>
+            </div>
+            <div class="faq-answer">
+              <p>Лучшая стратегия — избегать зомби, передвигаясь тихо и скрытно. Если столкновение неизбежно, используйте бесшумное оружие (луки, арбалеты, оружие с глушителем) или холодное оружие. Помните, что звуки выстрелов привлекают как зомби, так и других игроков.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Почему я постоянно умираю от болезней?</h3>
+              <span class="faq-toggle"></span>
+            </div>
+            <div class="faq-answer">
+              <p>Болезни в DayZ возникают из-за ряда факторов: питье нефильтрованной воды, употребление сырого мяса, промокание под дождем, контакт с больными игроками. Для профилактики используйте таблетки для очистки воды, готовьте мясо, носите теплую одежду и избегайте контакта с больными.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>DayZ</h2>
+          <p>Ваш путеводитель по выживанию</p>
+        </div>
+        <div class="footer-links">
+          <h3>Быстрые ссылки</h3>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="gameplay.html">Геймплей</a></li>
+            <li><a href="weapons.html">Оружие</a></li>
+            <li><a href="maps.html">Карты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Руководства</h3>
+          <ul>
+            <li><a href="beginners-guide.html">Для новичков</a></li>
+            <li><a href="survival-basics.html">Основы выживания</a></li>
+            <li><a href="crafting.html">Крафтинг</a></li>
+            <li><a href="base-building.html">Строительство баз</a></li>
+            <li><a href="pvp-tips.html">PvP советы</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <h3>О проекте</h3>
+          <p>Этот сайт создан фанатами игры DayZ для фанатов. Здесь вы найдете полезную информацию, советы и руководства по выживанию в мире DayZ.</p>
+          <a href="about.html" class="btn btn-outline">Узнать больше</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DayZ Фан-сайт. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/gameplay.js"></script>
+</body>
+</html>

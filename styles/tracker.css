@@ -1,0 +1,140 @@
+/* Tracker Component Styles */
+.tracker-container {
+  padding: var(--spacing-lg) 0;
+}
+
+.tracker-content {
+  background-color: var(--bg-card);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+/* Tracker stats section */
+.tracker-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.tracker-stat {
+  padding: var(--spacing-md);
+  background-color: rgba(81, 122, 89, 0.1);
+  border-radius: var(--border-radius-md);
+  transition: transform var(--transition-fast);
+}
+
+.tracker-stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Tracker actions */
+.tracker-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Calendar section */
+.tracker-calendar {
+  margin-bottom: var(--spacing-xl);
+}
+
+.tracker-calendar h3 {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary-dark);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.calendar-day {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-main);
+  transition: all var(--transition-fast);
+}
+
+.calendar-day.checked-in {
+  background-color: rgba(81, 122, 89, 0.2);
+  border-color: var(--color-primary-light);
+}
+
+.calendar-day.today {
+  border: 2px solid var(--color-secondary);
+}
+
+.day-date {
+  font-size: 0.8rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-secondary);
+}
+
+.day-status {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tips section */
+.tracker-tips {
+  background-color: rgba(185, 128, 74, 0.1);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--color-secondary);
+}
+
+.tracker-tips h3 {
+  color: var(--color-secondary-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.tracker-tips ul {
+  padding-left: var(--spacing-xl);
+}
+
+.tracker-tips li {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tracker-actions {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .calendar-grid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+  
+  .stat-value {
+    font-size: 1.8rem;
+  }
+}
